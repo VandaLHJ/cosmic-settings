@@ -135,6 +135,8 @@ accessibility = Dostępność
     .off = Wyłączona
     .unavailable = Niedostępna
     .high-contrast = Tryb wysokiego kontrastu
+    .invert-colors = Odwróć kolory
+    .color-filters = Filtr kolorów
 magnifier = Lupa
     .controls =
         Użyj skrótów klawiszowych:{ $zoom_in ->
@@ -154,6 +156,12 @@ magnifier = Lupa
     .continuous = Stale ze wskaźnikiem
     .onedge = Gdy wskaźnik osiągnie krawędź
     .centered = Jest stale wycentrowany
+color-filter = Typ filtra kolorów
+    .unknown = Aktywny nierozpoznany filtr
+    .greyscale = Odcienie szarości
+    .deuteranopia = Zielony/Czerwony (nierozpoznawanie zielonego, Daltonizm)
+    .protanopia = Czerwony/Zielony (nierozpoznawanie czerwonego, Protanopia)
+    .tritanopia = Niebieski/Żółty (nierozpoznawanie niebieskiego, Tritanopia)
 
 ## Desktop
 
@@ -444,12 +452,6 @@ dialog = Dialog
         *[other] {$time} sekund.
     }
     .revert-settings = Powróć do poprzednich ustawień
-
-legacy-applications = Skalowanie aplikacji systemu okien X11
-    .scaled-by-system = Skaluj wszystkie aplikacje X11
-    .system-description = Aplikacje X11 będą rozmyte na wyświetlaczach z wysokim DPI.
-    .scaled-natively = Renderuj aplikacje X11 w pierwotnej rozdzielczości.
-    .native-description = Aplikacje X11 które nie wspierają skalowania będą małe na wyświetlaczach z wysokim DPI. Włącz do gier by wykorzystywały pełną rozdzielczość monitora.
 
 ## Sound
 
@@ -797,6 +799,47 @@ add-language = Dodaj język
 install-additional-languages = Zainstaluj dodatkowe języki
 region = Region
 
+## Applications
+
+applications = Aplikacje
+
+## Applications: Default Applications
+
+default-apps = Domyślne Aplikacje
+    .desc = Domyślna przeglądarka, klient email, przeglądarka plików i inne aplikacje.
+    .web-browser = Przeglądarka
+    .file-manager = Przeglądarka plików
+    .mail-client = Klient email
+    .music = Muzyka
+    .video = Wideo
+    .photos = Obrazy
+    .calendar = Kalendarz
+    .terminal = Konsola
+    .other-associations = Inne powiązania
+    .text-editor = Edytor tekstu
+
+## Applications: Startup Applications
+
+startup-apps = Startowe Aplikacje
+    .desc = Skonfiguruj aplikacje uruchamiane po zalogowaniu
+    .add = Dodaj aplikację
+    .user = Aplikacje dla konkretnego użytkownika
+    .user-description = Te aplikacje są uruchamiane po zalogowaniu się jako obecny użytkownik.
+    .remove-dialog-title = Usunąć { $name }?
+    .remove-dialog-description = Jesteś pewien, że chcesz usunąć tą startową aplikację?
+    .search-for-application = Wyszukaj aplikację
+
+## Applications: Legacy Applications
+
+legacy-applications = Zgodność Aplikacji X11
+    .desc = Skalowanie i skróty globalne aplikacji systemu okien X11.
+
+legacy-applications = Skalowanie aplikacji systemu okien X11
+    .scaled-by-system = Skaluj wszystkie aplikacje X11
+    .system-description = Aplikacje X11 będą rozmyte na wyświetlaczach z wysokim DPI.
+    .scaled-natively = Renderuj aplikacje X11 w pierwotnej rozdzielczości.
+    .native-description = Aplikacje X11 które nie wspierają skalowania będą małe na wyświetlaczach z wysokim DPI. Włącz do gier by wykorzystywały pełną rozdzielczość monitora.
+
 ## System
 
 system = System i Konta
@@ -844,18 +887,3 @@ administrator = Administrator
 add-user = Dodaj użytkownika
 remove-user = Usuń użytkownika
 full-name = Pełna nazwa
-
-## System: Domyślne aplikacje
-
-default-apps = Domyślne Aplikacje
-    .desc = Domyślna przeglądarka, klient email, przeglądarka plików i inne aplikacje.
-    .web-browser = Przeglądarka
-    .file-manager = Przeglądarka plików
-    .mail-client = Klient email
-    .music = Muzyka
-    .video = Wideo
-    .photos = Obrazy
-    .calendar = Kalendarz
-    .terminal = Konsola
-    .other-associations = Inne powiązania
-    .text-editor = Edytor tekstu
